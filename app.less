@@ -1,0 +1,69 @@
+@import "bower_components/bootstrap/less/bootstrap.less";
+//@import "bower_components/bootstrap/less/theme.less";
+@import "bower_components/font-awesome/less/font-awesome.less";
+@fa-font-path: "bower_components/font-awesome/fonts";
+
+/* Component LESS */
+@import "partial/projects/projects.less";
+@import "partial/posts/posts.less";
+@import "partial/about/about.less";
+@import "partial/Inquiries/Inquiries.less";
+@import "partial/modal-project/modal-project.less";
+/* Add Component LESS Above */
+
+/* Required for Angular UI Bootstrap */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+/* Personal preference for BS modal.  The LESS below makes the backdrop white and
+   causes the modal to fade in rather than slide in. */
+//@modal-backdrop-bg: white;
+//.modal {
+//	&.fade {
+//		.transition(opacity .3s);
+//	}
+//	&.fade .modal-dialog {
+//		.translate(0,0);
+//	}
+//}
+
+body, html {
+	height:100%;
+}
+
+.main-menu-container{
+	width:200px;
+	background-color:#eee;
+	float:left;
+	height:100%;
+
+	.menu-button {
+
+		display:block;
+		padding:10px 30px;
+		text-align:left;
+
+	}
+
+	.menu-button:first-child {
+	margin-top:50px;
+	}
+
+	.menu-button:hover {
+		background-color:#ccc;
+		color:#fff;
+	}
+
+	.menu-button-active {
+
+		color:blue;
+		border-left:3px solid blue;
+
+	}
+}
+
+.main-container {
+
+	overflow:auto;
+
+}
+
